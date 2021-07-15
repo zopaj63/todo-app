@@ -7,11 +7,11 @@ class Task {
 const task = [];
 
 const taskForm = document.querySelector("[data-task-form]");
-const titleInput = taskForm.querySelector("[name=title]")
+const titleInput = taskForm.querySelector("[name=title]");
 
 taskForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    console.log(new Task(titleInput.value));
-    console.log(tasks);
+    task.push(new Task(titleInput.value));
+    console.log(task);
 });
 

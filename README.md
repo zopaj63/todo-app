@@ -8,3 +8,5 @@ Simple web application for creating and tracking todo tasks.
 - [ ] List all tasks
 - [ ] Mark a task as done
 - [ ] Delete a task
+
+users, reminders, archiving, priorities, sorting, deadlines, animations...
