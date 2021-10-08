@@ -12,7 +12,7 @@ class Task {
 
   createElement() {
     const taskElement = document.createElement("div");
-    taskElement.innerHTML = `<label>Done!<input type="checkbox" /> ${this.title} <button>Delete</button></label><hr>`;
+    taskElement.innerHTML = `<label>Done!<input type="checkbox" /><span class="title"> ${this.title} </span><button>Delete</button></label><hr>`;
 
     const removeButton = taskElement.querySelector("button");
     removeButton.addEventListener("click", (event) => {
@@ -26,6 +26,7 @@ class Task {
     checkboxElement.addEventListener("change", (event) => {
       event.preventDefault();
       this.isDone = event.target.checked;
+
     });
 
     return taskElement;
