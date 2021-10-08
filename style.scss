@@ -1,8 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* RESET ************************************************************ */
+*{box-sizing:border-box;
+margin:0;
+padding:0;}
+
+/* PRAVILA ZA OSNOVNO UREĐIVANJE HTML ELEMENATA ******************** */
+body{background-color:#97AFA0;
+font-family:"Trebuchet MS", sans-serif;}
+
+h1, p{font-family: 'Titillium Web', sans-serif;
+color:darkgray;
+margin: 20px;
+}
+
+img{max-width:100%;
+height:auto;}
+
+/* HELPERS *********************************************************** */
+.align-left{text-align:left;}
+.align-right{text-align:right;}
+.align-center{text-align:center;}
+.align-justify{text-align:justify;}
+
+
 body{
     background-color: beige;
     text-align: center;
+    margin: 20px;
 }
 
 [data-task-list]{
     text-align: left;
+}
+
+hr{height: 1px;
+	border-width: 0;
+	background-color: #A81800;
+	margin: 1rem 0;
+	width: 100%;
 }
