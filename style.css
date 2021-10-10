@@ -63,7 +63,6 @@ hr {
 canvas {
   background-color: brown;
   border-radius: 16px;
-  margin: 20px;
   padding: 10px;
 }
 
@@ -77,5 +76,10 @@ a {
   font-weight: 600;
   font-size: 1.2rem;
   color: brown;
+}
+
+#date {
+  color: brown;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */

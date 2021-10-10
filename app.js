@@ -143,3 +143,12 @@ function drawHand(ctx, pos, length, width) {
   ctx.stroke();
   ctx.rotate(-pos);
 }
+
+//const date = new Date();
+//document.getElementById("date").innerHTML = date;
+
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var today = new Date();
+
+document.getElementById("date").innerHTML = (today.toLocaleDateString("en-US", options));
+
