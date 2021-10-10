@@ -55,15 +55,16 @@ body {
 hr {
   height: 1px;
   border-width: 0;
-  background-color: #A81800;
+  background-color: brown;
   margin: 1rem 0;
   width: 100%;
 }
 
 canvas {
-  background-color: green;
+  background-color: brown;
   border-radius: 16px;
   margin: 20px;
+  padding: 10px;
 }
 
 a {
