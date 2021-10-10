@@ -26,7 +26,7 @@ class Task {
     checkboxElement.addEventListener("change", (event) => {
       event.preventDefault();
       this.isDone = event.target.checked;
-
+      taskElement.setAttribute("class", "strikeout");
     });
 
     return taskElement;
@@ -62,8 +62,16 @@ taskForm.addEventListener("submit", (event) => {
   taskList.refresh();
 });
 
+// date *****
+//const date = new Date();
+//document.getElementById("date").innerHTML = date;
 
-//clock *******
+var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+var today = new Date();
+document.querySelector("#date").innerHTML = (today.toLocaleDateString("en-US", options));
+
+
+// clock *******
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var radius = canvas.height / 2;
@@ -144,11 +152,4 @@ function drawHand(ctx, pos, length, width) {
   ctx.rotate(-pos);
 }
 
-//const date = new Date();
-//document.getElementById("date").innerHTML = date;
-
-var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-var today = new Date();
-
-document.getElementById("date").innerHTML = (today.toLocaleDateString("en-US", options));
 

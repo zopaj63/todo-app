@@ -81,5 +81,10 @@ a {
 #date {
   color: brown;
   font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.strikeout {
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=style.css.map */
