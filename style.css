@@ -60,8 +60,9 @@ hr {
   width: 100%;
 }
 
-.title{
-  color: #A81800;
-  font-weight: 800;
+canvas {
+  background-color: green;
+  border-radius: 16px;
+  margin: 20px;
 }
 /*# sourceMappingURL=style.css.map */

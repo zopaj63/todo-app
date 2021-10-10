@@ -11,14 +11,14 @@
 
 <body>
     <h1>My taskApp:)</h1>
+    <canvas id="canvas" width="200" height="200">
+    </canvas>
     <form data-task-form>
-        <input type="text" name="title" />
+        <input type="text" name="title" placeholder="New task" />
         <button type="submit">Create task</button>
     </form>
     <p>Task list:</p>
-    <div class="task-row">
-        <div data-task-list></div>
-    </div>
+    <div data-task-list></div>
     <script src="./app.js"></script>
 </body>
 
